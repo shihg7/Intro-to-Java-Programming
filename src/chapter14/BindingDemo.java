@@ -7,6 +7,7 @@ public class BindingDemo {
   public static void main(String[] args) {       
     DoubleProperty d1 = new SimpleDoubleProperty(1);
     DoubleProperty d2 = new SimpleDoubleProperty(2);
+    // 把d1绑定到d2上，双向绑定用bindBidirectional
     d1.bind(d2);
     System.out.println("d1 is " + d1.getValue() 
       + " and d2 is " + d2.getValue());
